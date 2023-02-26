@@ -76,19 +76,6 @@ public class Main {
 
 
 
-		// общая сумма потраченных средств.
-		System.out.print("Введите общюю сумму потраченных средств.\n");
-		Scanner general_cost = new Scanner(System.in);
-		int general_costs = general_cost.nextInt();
-		int sum = 0;
-		for (var person : listOfPersons) {
-			for (var travel : person.getTravels()) {
-				sum += travel.getTravel_cost();
-			}
-			if(general_costs == sum){
-				System.out.println("Имя человека: " + person.getName());
-			}
-		}
 
 
 
